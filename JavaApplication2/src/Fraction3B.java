@@ -7,7 +7,7 @@
 
 import java.util.*;
 
-class Fraction3 
+class Fraction3B
 {
     /*public char sign;
     public int num;
@@ -18,6 +18,6 @@ class Fraction3
         sign = '+';
         // num = 0; //there is a value already
         denom = 1;
-    }
-    
+    }*/
+}
   

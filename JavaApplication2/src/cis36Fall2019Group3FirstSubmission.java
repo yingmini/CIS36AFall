@@ -52,7 +52,7 @@ d) Gameboard: Ying
    We are going to have a research about how the game works.
    Then Ying will create the gameboard to start then share 
    it on Github so we can pull and work on our own part.
- */
+*/
 
 /** Logic_Code_Output
  * n/a

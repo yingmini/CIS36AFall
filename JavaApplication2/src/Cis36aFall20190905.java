@@ -1,5 +1,5 @@
 /**
- * Program Name: Cis36aFall2019Program1.java
+ * Program Name: Cis36aFall20190905.java
  * Discussion:   Java & Menu Code
  * Written By:   Ying Hsuen Lin
  * Date:         2019/09/05
