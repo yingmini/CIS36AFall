@@ -9,7 +9,7 @@ import java.util.*;
 
 public class Cis36aFall20190910 
 {
-    public static void main(String[] arg)
+    public static void main20190910 (String[] arg)
     {
         Fraction3 fr3Objl; //fr3Objl is an object reference 
                            //variable. The referenced object 

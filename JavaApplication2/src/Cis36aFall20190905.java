@@ -10,7 +10,7 @@ import java.util.*;
 public class Cis36aFall20190905 
 {
     //static int globalValue;
-    public static void main(String[] arg)
+    public static void main20190905(String[] arg)
     {
         int[] testAry1 = {1, 2, 3};
         int[] testAry2 = {-1, -2};
