@@ -1,17 +1,21 @@
 /**
- * Program Name: Cis36aHw3Ex1_1003.java
- * Discussion:   Tesing Fraction 3
+ * Program Name: Cis36aDriver1008.java
+ * Discussion:   Tesing Point
  * Written By:   Ying Hsuen Lin
- * Date:         2019/10/03
+ * Date:         2019/10/08
  */
 
 import java.util.*;
 
-public class Cis36aHw3Ex1_1003 
+class Cis36aDriver1008
 {
-    public static void main1003(String[] arg)
+    public static void main(String[] arg)
     {
-        runMenuHw3();
+        Point pRef1 = null;
+        
+        pRef1 = new Point();
+        
+        pRef1 = null;
     }
     
     public static void runMenuHw3()

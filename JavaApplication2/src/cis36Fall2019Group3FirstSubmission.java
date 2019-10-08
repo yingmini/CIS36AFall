@@ -6,7 +6,7 @@
  */
 
 public class cis36Fall2019Group3FirstSubmission {
-    public static void main(String[] arg){
+    public static void mainGroup3(String[] arg) {
 	System.out.println("a) Group Members: " +
                 "\tYing Hsuen Lin" + "\n\t\t\tPhuong Huynh" +
                 "\n\t\t\tFiker Workene" + 

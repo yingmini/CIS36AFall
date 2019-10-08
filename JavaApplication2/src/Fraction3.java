@@ -97,4 +97,8 @@ class Fraction3
     {
         return new Fraction3();
     }
+    public Fraction3 update(int s1, int n1, int d1)
+    {
+        return null;
+    }
 }
