@@ -16,7 +16,43 @@ class Fraction
     public Fraction()
     {
         // num = 0; //there is a value already
+        //denom = 1;
+        
+        //Fraction(5);
+        this(5);
+        
+        getNum();
+    }
+    
+    public Fraction(int n)
+    {
+        num = n;
         denom = 1;
+    }
+    
+    public int getNum()
+    {
+        return num;
+    }
+    
+    public void setNum(int n)
+    {
+        num = n;
+    }
+    
+    public void gsetDenom(int d)
+    {
+        //denom = d : may ne BAD
+    }
+    
+    public int getDenom()
+    {
+        return denom;
+    }
+    
+    public void update(int n, int d)
+    {
+        
     }
     
     public static void copyFrom(Fraction fr)

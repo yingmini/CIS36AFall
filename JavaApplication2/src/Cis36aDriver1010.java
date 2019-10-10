@@ -1,22 +1,22 @@
 /**
- * Program Name: Cis36aDriver1008.java
+ * Program Name: Cis36aDriver1010.java
  * Discussion:   Tesing Point
  * Written By:   Ying Hsuen Lin
- * Date:         2019/10/08
+ * Date:         2019/10/10
  */
 
 import java.util.*;
 
-class Cis36aDriver1008
+class Cis36aDriver1010
 {
-    public static void main1008(String[] arg)
+    public static void main(String[] arg)
     {
-        //int data;
-        Point pRef1 = null;
+        MyInt miObj1 = null;
         
-        pRef1 = new Point();
+        miObj1 = new MyInt();
+        System.out.println("miObj1.data : " + miObj1.data);
         
-        pRef1 = null;
+        miObj1.displayData();
     }
     
     public static void runMenuHw3()
