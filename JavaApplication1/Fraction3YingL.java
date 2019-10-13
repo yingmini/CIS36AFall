@@ -2,7 +2,7 @@
  * Program Name: Fraction3YingL.java
  * Discussion:   Fraction3YingL class
  * Written By:   Ying Hsuen Lin
- * Date:         2019/10/15
+ * Date:         2019/10/17
  */
 
 import java.util.*;
@@ -12,8 +12,6 @@ public class Fraction3YingL
     private int sign; // 1 : positive, -1 : negative
     private int num;
     private int denom; // Must be different than 0
-    
-    //String g = "hello";
     
     public Fraction3YingL() // Default constructor
     {
