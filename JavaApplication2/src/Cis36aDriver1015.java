@@ -1,22 +1,27 @@
 /**
- * Program Name: Cis36aDriver1010.java
- * Discussion:   Tesing Point
+ * Program Name: Cis36aDriver1015.java
+ * Discussion:   Fraction HW
  * Written By:   Ying Hsuen Lin
- * Date:         2019/10/10
+ * Date:         2019/10/15
  */
 
 import java.util.*;
 
-class Cis36aDriver1010
+class Cis36aDriver1015
 {
-    public static void main1010(String[] arg)
+    public static void main(String[] arg)
     {
-        MyInt miObj1 = null;
+        Fraction fr1 = new Fraction(24910);
+        Fraction fr2 = lfr.prnew Fraction(5);
+        int[] ary = fr1.getUncommonDigitVersion2();
         
-        miObj1 = new MyInt();
-        System.out.println("miObj1.data : " + miObj1.data);
+        for (int tmp : ary)
+        {
+            System.out.print("\n" + tmp);
+        }
         
-        miObj1.displayData();
+        FractionUtility.add(fr1, fr2);
+        //fr1.add(fr2);
     }
     
     public static void runMenuHw3()

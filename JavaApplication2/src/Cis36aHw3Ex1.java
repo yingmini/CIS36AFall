@@ -1,22 +1,17 @@
 /**
- * Program Name: Cis36aDriver1010.java
- * Discussion:   Tesing Point
+ * Program Name: Cis36aHw3Ex1.java
+ * Discussion:   Tesing Fraction 3
  * Written By:   Ying Hsuen Lin
- * Date:         2019/10/10
+ * Date:         2019/09/26
  */
 
 import java.util.*;
 
-class Cis36aDriver1010
+public class Cis36aHw3Ex1 
 {
-    public static void main1010(String[] arg)
+    public static void main(String[] arg)
     {
-        MyInt miObj1 = null;
-        
-        miObj1 = new MyInt();
-        System.out.println("miObj1.data : " + miObj1.data);
-        
-        miObj1.displayData();
+        runMenuHw3();
     }
     
     public static void runMenuHw3()
@@ -34,7 +29,9 @@ class Cis36aDriver1010
        do
        {
            System.out.print("\nMenu HW#3" +
-                   "\n");
+                   "\n 1. Initialization" +
+                   "\n 2. Quit" +
+                   "\nEnter the option: ");
            option = scanner.nextInt();
         
            switch (option)
@@ -48,13 +45,15 @@ class Cis36aDriver1010
                    //Additional codes is needed
                    break;
                case 2:
+                   System.out.println("\nQUIT!");
                    break;
                default:
+                   System.out.println("\nWRONG OPTION");
            } 
         } while (option != 2);
     }
     
-    public static Fraction3[] runInitializationMenu(Fraction3[] ary)
+    public static Fraction3[] runInitializationMenu_1(Fraction3[] ary)
     {
         int s1;
         int n1;
@@ -62,7 +61,7 @@ class Cis36aDriver1010
         
         Scanner scanner = new Scanner(System.in);
         
-        if (ary[0] != null)
+        if (ary[0] == null)
         {
             // Do create 2 new Fraction3 Objects
             ary = new Fraction3[2];
@@ -90,7 +89,77 @@ class Cis36aDriver1010
             d1 = scanner.nextInt();
             
             ary[1] = new Fraction3(s1, n1, d1);
+//            return new Fraction3[] 
+//            {new Fraction3(), new Fraction3()};
+        } else
+        {
+            // Update the existing object(s)
+//            return new Fraction3[] 
+//            {new Fraction3(), new Fraction3()};
+            System.out.println("\nCreating the first Fraction3 object-" +
+                    "\nEnter the sign info: ");
+            s1 = scanner.nextInt();
             
+            System.out.println("\nEnter an int for num: ");
+            n1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for denom: ");
+            d1 = scanner.nextInt();
+            
+            ary[0] = new Fraction3(s1, n1, d1);
+            
+            System.out.println("\nCreating the first Fraction3 object-" +
+                    "\nEnter the sign info: ");
+            s1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for num: ");
+            n1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for denom: ");
+            d1 = scanner.nextInt();
+            
+            ary[1] = new Fraction3(s1, n1, d1);
+        }
+        
+        return ary;
+    }
+    
+    public static Fraction3[] runInitializationMenu(Fraction3[] ary)
+    {
+        int s1;
+        int n1;
+        int d1;
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        if (ary[0] == null)
+        {
+            // Do create 2 new Fraction3 Objects
+            ary = new Fraction3[2];
+            
+            System.out.println("\nCreating the first Fraction3 object-" +
+                    "\nEnter the sign info: ");
+            s1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for num: ");
+            n1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for denom: ");
+            d1 = scanner.nextInt();
+            
+            ary[0] = new Fraction3(s1, n1, d1);
+            
+            System.out.println("\nCreating the first Fraction3 object-" +
+                    "\nEnter the sign info: ");
+            s1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for num: ");
+            n1 = scanner.nextInt();
+            
+            System.out.println("\nEnter an int for denom: ");
+            d1 = scanner.nextInt();
+            
+            ary[1] = new Fraction3(s1, n1, d1);
 //            return new Fraction3[] 
 //            {new Fraction3(), new Fraction3()};
         } else
@@ -122,17 +191,15 @@ class Cis36aDriver1010
     {
         Fraction3[] localAry1 = {new Fraction3(), new Fraction3()};
         Fraction3[] localAry2 = new Fraction3[]
-        {new Fraction3(), new Fraction3()};
+            {new Fraction3(), new Fraction3()};
         
         ary = new Fraction3[2];
-        
         System.out.println("\nary : " + ary + "\nary[0] : " +
                 ary[0] + "\nary[1] : " + ary[1]);
     }
     
-    public static void runCreatingSybmenu(Fraction3 left, Fraction3 right)
+    public static void runCreatingSybMenu(Fraction3 left, Fraction3 right)
     {
         //your code
     }
 }
-

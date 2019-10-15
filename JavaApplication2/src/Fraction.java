@@ -55,6 +55,116 @@ class Fraction
         
     }
     
+    public Fraction add(Fraction fr)
+    {
+        return new Fraction(1);
+    }
+    
+    public int[] getUncommonDigit(Fraction[] frAry)
+    {
+        return null;
+    }
+    
+    public int[] getUncommonDigitVersion2()
+    {
+        int[] ary = null;
+        int size;
+        int[] deAryForNum = new int[10];
+        int[] deAryForDenom = new int[10];
+        int tmp;
+        int j;
+        
+        tmp = (num < 0) ? -num : num;
+        do
+        {
+            deAryForNum[tmp % 10] = 1;
+            
+            tmp /= 10;
+        } while(tmp != 10);
+        
+        tmp = (denom < 0) ? -denom : denom;
+        do
+        {
+            deAryForDenom[tmp % 10] = 1;
+            
+            tmp /= 10;
+        } while(tmp != 10);
+        
+        size = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            deAryForNum[i] += deAryForDenom[i];
+            
+            if (deAryForNum[i] == 1)
+            {
+                size++;
+            }
+        }
+        
+        j = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            if (deAryForNum[i] == 1)
+            {
+                ary[j] = i;
+                j++;
+            }
+        }
+        
+        return ary;
+    }
+    
+    public int[] getUncommonDigitVersion1()
+    {
+        int[] ary = null;
+        int size;
+        int[] dcAryForNum = new int[10];
+        int[] dcAryForDenom = new int[10];
+        int tmp;
+        int j;
+        
+        tmp = (num < 0) ? -num : num;
+        do
+        {
+            dcAryForNum[tmp % 10]++;
+            
+            tmp /= 10;
+        } while(tmp != 10);
+        
+        tmp = (denom < 0) ? -denom : denom;
+        do
+        {
+            dcAryForDenom[tmp % 10]++;
+            
+            tmp /= 10;
+        } while(tmp != 10);
+        
+        size = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            if (((dcAryForNum[i] == 0) && (dcAryForDenom[i] != 0)) || 
+                    ((dcAryForNum[i] != 0) && (dcAryForDenom[i] == 0)))
+            {
+                size++;
+            }
+        }
+        
+        ary = new int[size];
+        
+        j = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            if (((dcAryForNum[i] == 0) && (dcAryForDenom[i] != 0)) || 
+                    ((dcAryForNum[i] != 0) && (dcAryForDenom[i] == 0)))
+            {
+                ary[j] = i;
+                j++;
+            }
+        }
+        
+        return ary;
+    }
+    
     public static void copyFrom(Fraction fr)
     {
         

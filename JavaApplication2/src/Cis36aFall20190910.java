@@ -21,9 +21,5 @@ public class Cis36aFall20190910
         System.out.println("\nValue stored in fr3Objl : " +
                 fr3Objl);
         fr3Objl = new Fraction3();
-//        System.out.println("\nValue stored in fr3Objl : " +
-//                fr3Objl + "\n  sign : " + fr3Objl.sign +
-//                "\n  num : " + fr3Objl.num + "\n  denom : " +
-//                fr3Objl.denom);
     }
 }
