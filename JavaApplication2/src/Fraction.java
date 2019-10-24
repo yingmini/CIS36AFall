@@ -7,7 +7,7 @@
 
 import java.util.*;
 
-class Fraction 
+class Fraction extends Object
 {
     //public char sign;
     public int num;
@@ -28,6 +28,12 @@ class Fraction
     {
         num = n;
         denom = 1;
+    }
+    
+    public Fraction(int n, int d)
+    {
+        num = n / 1; //bring in gcdBF()
+        denom = d / 1;
     }
     
     public int getNum()
@@ -202,5 +208,18 @@ class Fraction
         }
         
         return flag;
+    }
+    
+    @Override
+    protected void finalize()
+    {
+        System.out.println(this.toString() + "is being removed");
+    }
+    
+    @Override
+    public String toString()
+    {
+        return this.getClass().getName() + '@' +
+                Integer.toHexString(this.hashCode());
     }
 }
